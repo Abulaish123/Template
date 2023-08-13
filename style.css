@@ -1,0 +1,880 @@
+@charset "UTF-8";
+/**
+* Eric Meyer's Reset CSS v2.0
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section, time {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* meyerweb css reset end */
+
+textarea:focus, input:focus {
+  outline: 0;
+}
+
+input {
+  border-width: 0;
+}
+
+em {
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.group:before,
+.group:after {
+  content: " ";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1; /* ie 6/7 */
+}
+
+embed,
+img,
+object,
+video {
+  max-width: 100%;
+}
+sup {
+  font-size: 58.3%;
+  vertical-align: text-top;
+}
+sub {
+  font-size: 58.3%;
+  vertical-align: text-bottom;
+}
+.no-space-between-inline-blocks {
+  *letter-spacing: normal; /*reset IE < 8*/
+  letter-spacing: -0.31em; /*webkit*/
+  word-spacing: -0.43em; /*IE < 8 && gecko*/
+}
+/*restore spacing on inner elements*/
+.no-space-between-inline-blocks > * {
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.displace {
+  left: -5000px;
+  position: absolute;
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+html {
+  font-size: 16px;
+}
+body {
+  min-width: 1440px;
+  color: #000000;
+  font-size: 0.75rem; /* 12px / 16px = 0.75rem */
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+body {
+  float: none;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  width: 100%; /* 1440px / 1440px = 100% */
+}
+.background {
+  min-height: 4170px;
+  position: relative;
+  background: #ffffff center 0;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.group-1 {
+  height: 859px;
+  position: relative;
+  width: 100%; /* 1440px / 1440px = 100% */
+}
+.design {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%; /* 1440px / 1440px = 100% */
+  background: #ffe001;
+}
+.l-constrained-3 {
+  margin: 0 auto;
+  padding: 0 0 0 58px;
+  position: relative;
+  width: 1440px;
+}
+.col-6 {
+  float: left;
+  margin: 40px 0 0;
+  position: relative;
+  width: 574px;
+}
+.logo {
+  position: relative;
+  width: 158px;
+}
+.icon {
+  display: block;
+  margin: 0 auto;
+}
+.restaurant {
+  display: block;
+  margin: 3px auto 0;
+}
+.shape {
+  display: block;
+  height: 2px;
+  left: 52.5px;
+  margin: 326px auto 0;
+  position: relative;
+  width: 469px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.rectangle {
+  display: block;
+  height: 58px;
+  left: 51.5px;
+  margin: 59px auto 0;
+  position: relative;
+  width: 227px;
+  border: 1px solid #000000; /*stroke*/
+}
+.col-7 {
+  float: right;
+  padding: 130px 0 681px;
+  position: relative;
+  width: 639px;
+  background: url(images/rectangle_10.png) no-repeat 84px 0;
+}
+.links {
+  display: block;
+  position: relative;
+}
+.image {
+  left: 50%;
+  position: absolute;
+  top: 212px;
+  width: 1261px;
+  margin-left: -597px;
+}
+.leaf {
+  float: left;
+  margin: 85px 0 0;
+}
+.wrapper-5 {
+  float: right;
+  height: 647px;
+  position: relative;
+  width: 648px;
+}
+.leaf-2 {
+  left: 50%;
+  position: absolute;
+  top: 538px;
+  margin-left: 241px;
+}
+.tomato {
+  left: 50%;
+  position: absolute;
+  top: 514px;
+  margin-left: -294px;
+}
+.image-06 {
+  left: 50%;
+  position: absolute;
+  top: 0;
+  margin-left: -324px;
+}
+.text {
+  left: 50%;
+  position: absolute;
+  top: 211px;
+  width: 484px;
+  margin-left: -550px;
+}
+.title {
+  display: block;
+}
+.subtitle-1 {
+  display: block;
+  margin: 34px 0 0;
+  position: relative;
+}
+.title-2 {
+  display: block;
+  margin: 37px auto 0;
+}
+.text-2 {
+  display: block;
+  margin: 90px auto 0;
+  position: relative;
+  right: 19.5px;
+}
+.subtitle-2 {
+  display: block;
+  margin: 59px auto 0;
+  position: relative;
+  right: 15px;
+}
+.group-2 {
+  height: 747px;
+  margin: 51px 0 0;
+  position: relative;
+  width: 100%; /* 1440px / 1440px = 100% */
+}
+.design-2 {
+  left: 0;
+  position: absolute;
+  top: 284px;
+  width: 100%; /* 1440px / 1440px = 100% */
+}
+.wrapper-3 {
+  height: 156px;
+  position: relative;
+  width: 100%; /* 1440px / 1440px = 100% */
+}
+.rectangle-copy {
+  height: 139px;
+  left: 0;
+  max-width: 1440px;
+  position: absolute;
+  top: 17px;
+  width: 100%;
+  background: #3f6602;
+}
+.rectangle-2 {
+  height: 139px;
+  left: 0;
+  max-width: 1439px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #e8e6a9;
+}
+.row-3 {
+  margin: 246px auto 0;
+  padding: 0 140px;
+  position: relative;
+  width: 1440px;
+}
+.wrapper-7 {
+  float: left;
+  height: 61px;
+  position: relative;
+  width: 195px;
+}
+.rectangle-3 {
+  height: 57px;
+  left: 50%;
+  position: absolute;
+  top: 4px;
+  width: 195px;
+  background: #3f6602;
+  margin-left: -97.5px;
+}
+.rectangle-4 {
+  height: 57px;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  width: 195px;
+  background: #ffe001;
+  margin-left: -97.5px;
+}
+.wrapper-8 {
+  float: left;
+  height: 61px;
+  margin: 0 0 0 288px;
+  position: relative;
+  width: 195px;
+}
+.rectangle-5 {
+  height: 57px;
+  left: 50%;
+  position: absolute;
+  top: 4px;
+  width: 195px;
+  background: #3f6602;
+  margin-left: -97.5px;
+}
+.rectangle-6 {
+  height: 57px;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  width: 195px;
+  background: #ffe001;
+  margin-left: -97.5px;
+}
+.wrapper-9 {
+  float: left;
+  height: 61px;
+  margin: 0 0 0 277px;
+  position: relative;
+  width: 195px;
+}
+.rectangle-7 {
+  height: 57px;
+  left: 50%;
+  position: absolute;
+  top: 4px;
+  width: 195px;
+  background: #3f6602;
+  margin-left: -97.5px;
+}
+.rectangle-8 {
+  height: 57px;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  width: 195px;
+  background: #ffe001;
+  margin-left: -97.5px;
+}
+.image-2 {
+  left: 50%;
+  position: absolute;
+  top: 166px;
+  width: 1320px;
+  margin-left: -664px;
+}
+.image-07 {
+  float: left;
+  margin: 3px 0 0;
+}
+.image-08 {
+  float: left;
+  margin: 1px 0 0 121px;
+}
+.image-09 {
+  float: left;
+  margin: 0 0 0 130px;
+}
+.text-3 {
+  left: 50%;
+  position: absolute;
+  top: 0;
+  width: 1310px;
+  margin-left: -660px;
+}
+.sub-title {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  right: 28.5px;
+}
+.body-text {
+  display: block;
+  left: 5px;
+  margin: 24px auto 0;
+  position: relative;
+}
+.row-2 {
+  margin: 455px 0 0;
+  position: relative;
+}
+.col-11 {
+  float: left;
+  position: relative;
+  width: 355px;
+}
+.title-3 {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  right: 8px;
+}
+.body-text-2 {
+  display: block;
+  margin: 23px 0 0;
+}
+.link {
+  display: block;
+  margin: 58px auto 0;
+}
+.col-12 {
+  float: left;
+  margin: 0 0 0 127px;
+  position: relative;
+  width: 355px;
+}
+.title-4 {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  right: 7px;
+}
+.body-text-3 {
+  display: block;
+  margin: 23px 0 0;
+}
+.link-2 {
+  display: block;
+  margin: 58px auto 0;
+}
+.col-13 {
+  float: left;
+  margin: 0 0 0 118px;
+  position: relative;
+  width: 355px;
+}
+.title-5 {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  right: 8px;
+}
+.body-text-4 {
+  display: block;
+  margin: 23px 0 0;
+}
+.link-3 {
+  display: block;
+  margin: 58px auto 0;
+}
+.l-constrained {
+  margin: 145px auto 0;
+  position: relative;
+  width: 1440px;
+}
+.group-3 {
+  margin: 0 auto;
+  position: relative;
+  z-index: 0;
+}
+.text-4 {
+  margin: 0 auto;
+  position: relative;
+  width: 1025px;
+  z-index: 70;
+}
+.title-6 {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  right: 3.5px;
+}
+.sub-title-2 {
+  display: block;
+  margin: 9px auto 0;
+  position: relative;
+  right: 15px;
+}
+.body-text-5 {
+  display: block;
+  margin: 24px 0 0;
+}
+.image-3 {
+  height: 478px;
+  margin: 21px auto 0;
+  overflow: hidden;
+  position: relative;
+  width: 1440px;
+  z-index: 75;
+}
+.image-4 {
+  left: 50%;
+  position: absolute;
+  top: 46px;
+  margin-left: 313px;
+}
+.image-5 {
+  left: 50%;
+  position: absolute;
+  top: 46px;
+  margin-left: -720px;
+}
+.image-6 {
+  left: 50%;
+  position: absolute;
+  top: 0;
+  margin-left: -373px;
+}
+.design-3 {
+  margin: -5px auto 0;
+  position: relative;
+  width: 67px;
+  z-index: 64;
+}
+.dots {
+  position: relative;
+}
+.dots > * {
+  float: left;
+  margin: 0 8px 0 0;
+}
+.dots > *:last-child {
+  margin-right: 0 !important;
+}
+.ellipse {
+  height: 17px;
+  width: 17px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #ffe001;
+}
+.ellipse-2 {
+  height: 17px;
+  width: 17px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #dcdcdc;
+}
+.ellipse-3 {
+  height: 17px;
+  width: 17px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #dcdcdc;
+}
+.image-7 {
+  height: 427px;
+  margin: 114px auto 0;
+  position: relative;
+  width: 1242px;
+}
+.image-8 {
+  left: 50%;
+  position: absolute;
+  top: 228px;
+  margin-left: 26px;
+}
+.image-9 {
+  left: 50%;
+  position: absolute;
+  top: 1px;
+  margin-left: 26px;
+}
+.rectangle-1 {
+  left: 50%;
+  position: absolute;
+  top: 0;
+  width: 605px;
+  -webkit-box-shadow: 0 7px 0 0 rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0 7px 0 0 rgba(0, 0, 0, 0.32);
+  box-shadow: 0 7px 0 0 rgba(0, 0, 0, 0.32); /*drop shadow*/
+  margin-left: -621px;
+}
+.text-5 {
+  left: 50%;
+  position: absolute;
+  top: 31px;
+  width: 894px;
+  margin-left: -568px;
+}
+.body-text-6 {
+  float: left;
+  margin: 13px 0 0;
+}
+.col-10 {
+  float: right;
+  position: relative;
+  width: 271px;
+}
+.body-text-7 {
+  display: block;
+  position: relative;
+}
+.body-text-8 {
+  display: block;
+  margin: 132px 0 0;
+  position: relative;
+}
+.group-5 {
+  margin: 85px auto 0;
+  position: relative;
+  width: 784px;
+  z-index: 0;
+}
+.text-6 {
+  margin: 0 0 0 23px;
+  overflow: hidden;
+  position: relative;
+  width: 631px;
+  z-index: 38;
+}
+.sub-title-3 {
+  display: block;
+  left: 47px;
+  margin: 0 auto;
+  position: relative;
+}
+.title-7 {
+  display: block;
+  left: 30.5px;
+  margin: 22px auto 0;
+  position: relative;
+}
+.row {
+  margin: 109px 0 0;
+  position: relative;
+}
+.col-8 {
+  float: left;
+  margin: 1px 353px 0 0;
+  position: relative;
+  width: 51px;
+}
+.name {
+  display: block;
+  position: relative;
+}
+.date {
+  display: block;
+  margin: 78px 0 0;
+  position: relative;
+}
+.people {
+  display: block;
+  margin: 78px 0 0;
+  position: relative;
+}
+.col-9 {
+  float: left;
+  position: relative;
+  width: 227px;
+}
+.email {
+  display: block;
+  position: relative;
+}
+.time {
+  display: block;
+  margin: 78px 0 0;
+  position: relative;
+}
+.text-7 {
+  display: block;
+  left: 43.5px;
+  margin: 78px auto 0;
+  position: relative;
+}
+.design-4 {
+  margin: -227px 0 0;
+  position: relative;
+  z-index: 30;
+}
+.col-2 {
+  float: left;
+  margin: 0 26px 0 0;
+  position: relative;
+  width: 379px;
+}
+.rounded-rectangle {
+  height: 65px;
+  width: 379px;
+  border: 1px solid #bebebe; /*stroke*/
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.rounded-rectangle-2 {
+  height: 65px;
+  margin: 27px 0 0;
+  width: 379px;
+  border: 1px solid #bebebe; /*stroke*/
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.rounded-rectangle-3 {
+  height: 65px;
+  margin: 27px 0 0;
+  width: 379px;
+  border: 1px solid #bebebe; /*stroke*/
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.col-3 {
+  float: left;
+  position: relative;
+  width: 379px;
+}
+.rounded-rectangle-4 {
+  height: 65px;
+  width: 379px;
+  border: 1px solid #bebebe; /*stroke*/
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.rounded-rectangle-5 {
+  height: 65px;
+  margin: 27px 0 0;
+  width: 379px;
+  border: 1px solid #bebebe; /*stroke*/
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.rounded-rectangle-6 {
+  height: 65px;
+  margin: 27px 0 0;
+  width: 379px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #ffe001;
+}
+.design-5 {
+  margin: 97px 0 0;
+  padding: 33px 0 88px;
+  position: relative;
+  width: 100%; /* 1440px / 1440px = 100% */
+  background: url(images/bg_image.png) no-repeat center 0;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.l-constrained-2 {
+  margin: 0 auto;
+  padding: 0 87px;
+  position: relative;
+  width: 1440px;
+}
+.logo-2 {
+  margin: 0 0 0 16px;
+  position: relative;
+  width: 157px;
+}
+.icon-2 {
+  display: block;
+  margin: 0 auto;
+}
+.restaurant-2 {
+  display: block;
+  margin: 3px auto 0;
+}
+.text-8 {
+  margin: 61px 0 0 16px;
+  overflow: hidden;
+  position: relative;
+  width: 1140px;
+}
+.body-text-9 {
+  float: left;
+}
+.col-14 {
+  float: right;
+  margin: 27px 0 0;
+  position: relative;
+  width: 273px;
+}
+.address {
+  display: block;
+  position: relative;
+}
+.email-2 {
+  display: block;
+  margin: 30px 0 0;
+  position: relative;
+}
+.location-icon {
+  float: right;
+  margin: 16px 34px 0 0;
+}
+.email-3 {
+  display: block;
+  left: 198.5px;
+  margin: -22px auto 0;
+  position: relative;
+}
+.social-media {
+  left: 557px;
+  margin: 161px auto 0;
+  position: relative;
+  width: 152px;
+}
+.icon-3 {
+  position: relative;
+}
+.icon-3 > * {
+  float: left;
+  margin: 0 12px 0 0;
+}
+.icon-3 > *:last-child {
+  margin-right: 0 !important;
+}
